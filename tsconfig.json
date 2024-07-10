@@ -1,0 +1,12 @@
+{
+	"extends": "@tsconfig/strictest/tsconfig.json",
+	"compilerOptions": {
+		"incremental": true,
+		"target": "esnext",
+		"module": "esnext",
+		"moduleResolution": "bundler",
+		"types": ["react/experimental"],
+		"jsx": "react-jsx",
+		"outDir": "dist"
+	}
+}
