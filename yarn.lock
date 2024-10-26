@@ -3611,6 +3611,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"lucide-react@npm:^0.453.0":
+  version: 0.453.0
+  resolution: "lucide-react@npm:0.453.0"
+  peerDependencies:
+    react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0-rc
+  checksum: 10c0/eec257049609eff958329943da6e129c8db1969aa789c6e922f59418d7b6f6913c22e971ac7885efc80eeb3e41e180c48afdee92738a63a31ef5a39836037b7e
+  languageName: node
+  linkType: hard
+
 "magic-string@npm:^0.25.3":
   version: 0.25.9
   resolution: "magic-string@npm:0.25.9"
@@ -3882,6 +3891,7 @@ __metadata:
     autoprefixer: "npm:^10.4.20"
     lefthook: "npm:^1.8.1"
     lightningcss: "npm:^1.27.0"
+    lucide-react: "npm:^0.453.0"
     react: "npm:rc"
     react-dom: "npm:rc"
     react-server-dom-webpack: "npm:rc"
