@@ -1,0 +1,25 @@
+name: build
+on: [push]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.ref_name }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    timeout-minutes: 5
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # waiting on: https://github.com/actions/setup-node/issues/531
+      - run: corepack enable
+      - uses: actions/setup-node@v4
+        with:
+          # NODE_VERSION
+          node-version: 22
+          cache: yarn
+
+      - run: yarn install --immutable
+      - run: yarn lint
+      - run: yarn typecheck
+      - run: yarn build
