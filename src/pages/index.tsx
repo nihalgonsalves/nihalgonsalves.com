@@ -1,51 +1,77 @@
-import "./index.css";
+import {
+	GithubIcon,
+	InstagramIcon,
+	LinkedinIcon,
+	MailIcon,
+	MapPinHouseIcon,
+} from "lucide-react";
 
 export default async function HomePage() {
 	return (
-		<div>
-			<div>
-				<img className="profile-img" alt="Profile" src="/images/profile.webp" />
-				<main>
-					<h1>Nihal Gonsalves</h1>
-					<h2>Senior Software Engineer</h2>
-					<ul className="key-data">
-						<li>
-							<i className="fa fa-map-marker" /> Berlin, Germany
-						</li>
-					</ul>
-					<ul className="link-icons">
-						<li>
-							<a title="Email" href="mailto:me@nihalgonsalv.es">
-								<i className="fa fa-envelope" />
-							</a>
-						</li>
-						<li>
+		<div className="h-full lg:py-8">
+			<div className="h-full bg-sky-950 text-gray-200 lg:h-auto">
+				<div className="flex flex-col gap-8 p-8 lg:flex-row lg:items-center">
+					<img
+						className="max-w-48 rounded-full"
+						alt="Profile"
+						src="/images/profile.webp"
+					/>
+					<main className="relative bottom-2 flex flex-col gap-4">
+						<h1 className="text-4xl">Nihal Gonsalves</h1>
+						<section>
+							<h2 className="text-lg">Senior Software Engineer</h2>
+							<div className="flex items-center gap-2">
+								<MapPinHouseIcon aria-label="Location" className="size-5" />
+								Berlin, Germany
+							</div>
+						</section>
+						<section className="flex flex-col gap-2 lg:flex-row lg:gap-4">
 							<a
-								title="LinkedIn: Nihal Gonsalves"
+								href="mailto:me@nihalgonsalv.es"
+								className="flex items-center gap-2 underline hover:no-underline"
+							>
+								<MailIcon
+									className="relative top-[1px] size-5 shrink-0 text-white"
+									aria-label="Email"
+								/>
+								me@nihalgonsalv.es
+							</a>
+
+							<a
 								href="https://www.linkedin.com/in/nihal-gonsalves"
+								className="flex items-center gap-2 underline hover:no-underline"
 							>
-								<i className="fa fa-linkedin" />
+								<LinkedinIcon
+									className="size-5 shrink-0 text-white"
+									aria-label="LinkedIn"
+								/>
+								Nihal Gonsalves
 							</a>
-						</li>
-						<li>
+
 							<a
-								title="GitHub: nihalgonsalves"
 								href="https://github.com/nihalgonsalves"
+								className="flex items-center gap-2 underline hover:no-underline"
 							>
-								<i className="fa fa-github" />
+								<GithubIcon
+									className="relative top-[1px] size-5 shrink-0 text-white"
+									aria-label="GitHub"
+								/>
+								nihalgonsalves
 							</a>
-						</li>
-						<li>
+
 							<a
-								title="Instagram: @nihalgonsalves"
 								href="https://www.instagram.com/nihalgonsalves"
+								className="flex items-center gap-2 underline hover:no-underline"
 							>
-								<i className="fa fa-instagram" />
+								<InstagramIcon
+									className="relative top-[1px] size-5 shrink-0 text-white"
+									aria-label="Instagram"
+								/>
+								nihalgonsalves
 							</a>
-						</li>
-					</ul>
-				</main>
-				<div style={{ clear: "both" }} />
+						</section>
+					</main>
+				</div>
 			</div>
 		</div>
 	);

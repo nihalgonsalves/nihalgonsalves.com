@@ -13,6 +13,7 @@
 		"typecheck": "tsc --build"
 	},
 	"dependencies": {
+		"lucide-react": "^0.453.0",
 		"react": "rc",
 		"react-dom": "rc",
 		"react-server-dom-webpack": "rc",

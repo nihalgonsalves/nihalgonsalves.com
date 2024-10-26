@@ -6,24 +6,17 @@ type RootLayoutProps = { children: ReactNode };
 
 export default async function RootLayout({ children }: RootLayoutProps) {
 	return (
-		<>
-			<title>Nihal Gonsalves</title>
-			<meta charSet="utf-8" />
-			<meta content="Nihal Gonsalves" name="author" />
-			<meta content="width=device-width, initial-scale=1" name="viewport" />
-			<link
-				href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-				rel="stylesheet"
-				type="text/css"
-			/>
-			<link
-				href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
-				rel="stylesheet"
-				type="text/css"
-			/>
-
-			<div className="container">{children}</div>
-		</>
+		<html lang="en">
+			<head>
+				<title>Nihal Gonsalves</title>
+				<meta charSet="utf-8" />
+				<meta content="Nihal Gonsalves" name="author" />
+				<meta name="description" content="Software Engineer in Berlin, DE" />
+				<meta content="width=device-width, initial-scale=1" name="viewport" />
+				<link rel="preconnect" href="https://rsms.me/" />
+			</head>
+			<body className="h-[100dvh]">{children}</body>
+		</html>
 	);
 }
 
