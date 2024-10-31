@@ -8,8 +8,8 @@ import {
 
 export default async function HomePage() {
 	return (
-		<div className="h-full lg:py-8 dark:bg-slate-950">
-			<div className="flex h-full flex-col gap-8 bg-sky-950 p-8 text-gray-200 lg:h-auto lg:flex-row lg:items-center">
+		<div className="h-full lg:p-8 dark:bg-slate-950">
+			<div className="flex h-full flex-col gap-8 bg-sky-950 p-8 text-gray-200 lg:h-auto lg:flex-row lg:items-center lg:rounded-lg">
 				<img
 					className="max-w-48 rounded-full"
 					alt="Profile"
