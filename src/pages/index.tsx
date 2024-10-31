@@ -18,7 +18,7 @@ export default async function HomePage() {
 				<main className="relative bottom-2 flex flex-col gap-4">
 					<h1 className="text-4xl">Nihal Gonsalves</h1>
 					<section>
-						<h2 className="text-lg">Senior Software Engineer</h2>
+						<h2 className="text-lg">Staff Software Engineer</h2>
 						<div className="flex items-center gap-2">
 							<MapPinHouseIcon aria-label="Location" className="size-5" />
 							Berlin, Germany
