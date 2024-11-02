@@ -15,7 +15,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
 				<meta content="width=device-width, initial-scale=1" name="viewport" />
 				<link rel="preconnect" href="https://rsms.me/" />
 			</head>
-			<body className="h-[100dvh]">{children}</body>
+			<body>{children}</body>
 		</html>
 	);
 }
