@@ -6,10 +6,7 @@ compatibility_flags = [ "nodejs_als" ]
 main = "./dist/worker/serve-cloudflare.js"
 
 routes = [
-  { pattern = "nihalgonsalves.com", custom_domain = true },
-  { pattern = "www.nihalgonsalves.com", custom_domain = true },
   { pattern = "nihalgonsalv.es", custom_domain = true },
-  { pattern = "www.nihalgonsalv.es", custom_domain = true },
 ]
 
 [assets]
