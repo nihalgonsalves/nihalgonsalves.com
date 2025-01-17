@@ -7,10 +7,21 @@
 		"enabled": true,
 		"rules": {
 			"recommended": true,
+			"style": {
+				"useFilenamingConvention": {
+					"level": "error",
+					"options": {
+						"filenameCases": ["kebab-case"]
+					}
+				}
+			},
 			"nursery": {
 				"useSortedClasses": "error"
 			}
 		}
+	},
+	"formatter": {
+		"ignore": ["./src/pages.gen.ts"]
 	},
 	"vcs": {
 		"enabled": true,

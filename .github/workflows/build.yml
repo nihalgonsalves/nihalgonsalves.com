@@ -20,6 +20,6 @@ jobs:
           cache: yarn
 
       - run: yarn install --immutable
-      - run: yarn lint
-      - run: yarn typecheck
-      - run: yarn build
+      - run: node --run lint
+      - run: node --run typecheck
+      - run: node --run build
