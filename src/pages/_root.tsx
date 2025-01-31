@@ -12,6 +12,7 @@ export default async function RootElement({ children }: RootElementProps) {
 				<meta name="description" content="Software Engineer in Berlin, DE" />
 				<meta content="width=device-width, initial-scale=1" name="viewport" />
 				<link rel="preconnect" href="https://rsms.me/" />
+				<link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
 			</head>
 			<body>{children}</body>
 		</html>

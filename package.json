@@ -3,7 +3,7 @@
 	"version": "0.1.0",
 	"type": "module",
 	"private": true,
-	"packageManager": "yarn@4.5.1+sha512.341db9396b6e289fecc30cd7ab3af65060e05ebff4b3b47547b278b9e67b08f485ecd8c79006b405446262142c7a38154445ef7f17c1d5d1de7d90bf9ce7054d",
+	"packageManager": "yarn@4.6.0+sha512.5383cc12567a95f1d668fbe762dfe0075c595b4bfff433be478dbbe24e05251a8e8c3eb992a986667c1d53b6c3a9c85b8398c35a960587fbd9fa3a0915406728",
 	"scripts": {
 		"dev": "waku dev",
 		"build": "waku build --with-cloudflare",
@@ -13,24 +13,24 @@
 		"typecheck": "tsc --build"
 	},
 	"dependencies": {
-		"lucide-react": "^0.472.0",
+		"lucide-react": "^0.474.0",
 		"react": "^19.0.0",
 		"react-dom": "^19.0.0",
 		"react-server-dom-webpack": "^19.0.0",
-		"waku": "^0.21.15"
+		"waku": "^0.21.17"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^1.9.4",
 		"@nihalgonsalves/esconfig": "^0.10.19",
+		"@tailwindcss/vite": "^4.0.2",
 		"@tsconfig/strictest": "^2.0.5",
-		"@types/react": "^19.0.7",
+		"@types/react": "^19.0.8",
 		"@types/react-dom": "^19.0.3",
-		"autoprefixer": "^10.4.20",
-		"lefthook": "^1.10.8",
+		"lefthook": "^1.10.10",
 		"lightningcss": "^1.29.1",
-		"tailwindcss": "^3.4.17",
+		"tailwindcss": "4.0.2",
 		"typescript": "^5.7.3",
-		"vite": "^6.0.7",
-		"wrangler": "^3.99.0"
+		"vite": "^6.0.11",
+		"wrangler": "^3.107.2"
 	}
 }

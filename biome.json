@@ -12,6 +12,9 @@
 			}
 		}
 	},
+	"formatter": {
+		"ignore": ["./src/pages.gen.ts"]
+	},
 	"vcs": {
 		"enabled": true,
 		"clientKind": "git",
