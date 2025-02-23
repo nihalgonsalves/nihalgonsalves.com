@@ -1,3 +1,6 @@
+@import url("./reset.css");
+@import url("./inter.css");
+
 @import "tailwindcss";
 
 @utility container {
@@ -12,6 +15,8 @@
 }
 
 @theme {
+	--color-\*: initial;
+
 	--color-border: hsl(var(--border));
 	--color-input: hsl(var(--input));
 	--color-ring: hsl(var(--ring));
@@ -109,15 +114,9 @@
 		@apply border-border;
 	}
 
-	:root {
-		font-family: Inter, sans-serif;
-		font-display: swap;
+	body {
+		font-family: InterVariable, sans-serif;
 		font-feature-settings: "liga" 1, "calt" 1; /* fix for Chrome */
-	}
-
-	@supports (font-variation-settings: normal) {
-		:root {
-			font-family: InterVariable, sans-serif;
-		}
+		font-display: swap;
 	}
 }

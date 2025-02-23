@@ -11,11 +11,11 @@ export default async function HomePage() {
 		<div className="grid h-full place-items-center p-4 lg:p-8">
 			<div className="flex h-full w-full max-w-[1400px] flex-col gap-8 rounded-lg border bg-card p-8 text-card-foreground lg:h-auto lg:flex-row lg:items-center">
 				<img
-					className="max-w-36 rounded-full lg:max-w-36 xl:max-w-48"
 					alt="Profile"
 					src="/images/profile.webp"
+					className="size-[150px] rounded-lg"
 				/>
-				<main className="relative bottom-2 flex flex-col gap-4">
+				<main className="flex flex-col gap-4">
 					<h1 className="text-3xl lg:text-4xl">Nihal Gonsalves</h1>
 					<section>
 						<h2 className="text-lg">Staff Software Engineer</h2>

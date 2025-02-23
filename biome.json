@@ -20,8 +20,8 @@
 			}
 		}
 	},
-	"formatter": {
-		"ignore": ["./src/pages.gen.ts"]
+	"files": {
+		"ignore": ["./src/pages.gen.ts", "./src/inter.css"]
 	},
 	"vcs": {
 		"enabled": true,
