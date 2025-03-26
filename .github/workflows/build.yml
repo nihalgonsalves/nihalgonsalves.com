@@ -17,9 +17,9 @@ jobs:
         with:
           # NODE_VERSION
           node-version: 22
-          cache: yarn
+          cache: pnpm
 
-      - run: yarn install --immutable
+      - run: pnpm install --frozen-lockfile
       - run: node --run lint
       - run: node --run typecheck
       - run: node --run build

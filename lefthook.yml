@@ -3,8 +3,8 @@ pre-commit:
   commands:
     biome:
       glob: "*.{js,ts,jsx,tsx}"
-      run: yarn biome check --write {staged_files}
+      run: node --run lint -- --write {staged_files}
       stage_fixed: true
     tsc:
       glob: "*.{js,ts,jsx,tsx}"
-      run: yarn typecheck
+      run: node --run typecheck
