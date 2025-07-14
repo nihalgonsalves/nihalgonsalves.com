@@ -11,18 +11,10 @@ export default async function RootElement({ children }: RootElementProps) {
 				<meta content="Nihal Gonsalves" name="author" />
 				<meta name="description" content="Software Engineer in Berlin, DE" />
 				<meta content="width=device-width, initial-scale=1" name="viewport" />
+				<link rel="preconnect" href="https://fonts.googleapis.com" />
 				<link
-					rel="preload"
-					href="/InterVariable.woff2"
-					as="font"
-					type="font/woff2"
-					crossOrigin="anonymous"
-				/>
-				<link
-					rel="preload"
-					href="/InterVariable-Italic.woff2"
-					as="font"
-					type="font/woff2"
+					rel="preconnect"
+					href="https://fonts.gstatic.com"
 					crossOrigin="anonymous"
 				/>
 			</head>

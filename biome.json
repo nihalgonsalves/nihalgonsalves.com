@@ -21,7 +21,7 @@
 		}
 	},
 	"files": {
-		"ignore": ["./src/pages.gen.ts", "./src/inter.css"]
+		"ignore": ["./src/pages.gen.ts"]
 	},
 	"vcs": {
 		"enabled": true,

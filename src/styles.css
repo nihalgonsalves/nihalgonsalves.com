@@ -1,5 +1,5 @@
 @import url("./reset.css");
-@import url("./inter.css");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 @import "tailwindcss";
 
@@ -115,8 +115,7 @@
 	}
 
 	body {
-		font-family: InterVariable, sans-serif;
-		font-feature-settings: "liga" 1, "calt" 1; /* fix for Chrome */
-		font-display: swap;
+		font-family: "Inter", sans-serif;
+		font-optical-sizing: auto;
 	}
 }
