@@ -1,5 +1,7 @@
 import type { ReactNode } from "react";
 
+import "../styles.css";
+
 type RootElementProps = { children: ReactNode };
 
 const getCsp = () => {
