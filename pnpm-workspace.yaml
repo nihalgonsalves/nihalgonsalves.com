@@ -1,3 +1,7 @@
+blockExoticSubdeps: true
+strictDepBuilds: true
+saveExact: true
+
 ignoredBuiltDependencies:
   - '@biomejs/biome'
   - '@swc/core'
