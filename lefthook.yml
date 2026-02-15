@@ -1,10 +1,14 @@
+output:
+  - summary
+  - error
 pre-commit:
   parallel: true
   commands:
-    biome:
+    oxlint:
       glob: "*.{js,ts,jsx,tsx}"
-      run: node --run lint -- --write {staged_files}
+      run: node --run lint -- {staged_files}
       stage_fixed: true
-    tsc:
-      glob: "*.{js,ts,jsx,tsx}"
-      run: node --run typecheck
+    oxfmt:
+      glob: "*.{js,ts,jsx,tsx,html,css,json,yaml,md}"
+      run: node --run format -- --no-error-on-unmatched-pattern {staged_files}
+      stage_fixed: true

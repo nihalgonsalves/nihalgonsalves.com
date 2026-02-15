@@ -1,14 +1,11 @@
-import type { ReactNode } from "react";
-
 import "../styles.css";
+
+import type { ReactNode } from "react";
 
 type RootElementProps = { children: ReactNode };
 
 const getCsp = () => {
-	const config: [
-		string,
-		("'self'" | "'unsafe-inline'" | `https://${string}` | "*")[],
-	][] = [
+	const config: [string, ("'self'" | "'unsafe-inline'" | `https://${string}` | "*")[]][] = [
 		["default-src", ["'self'"]],
 		["script-src", ["'self'", "'unsafe-inline'"]],
 		[
@@ -44,11 +41,7 @@ export default async function RootElement({ children }: RootElementProps) {
 				<meta name="description" content="Software Engineer in Berlin, DE" />
 				<meta content="width=device-width, initial-scale=1" name="viewport" />
 				<link rel="preconnect" href="https://fonts.googleapis.com" />
-				<link
-					rel="preconnect"
-					href="https://fonts.gstatic.com"
-					crossOrigin="anonymous"
-				/>
+				<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
 			</head>
 			<body>{children}</body>
 		</html>

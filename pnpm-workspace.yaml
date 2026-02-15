@@ -1,14 +1,11 @@
 blockExoticSubdeps: true
-strictDepBuilds: true
-saveExact: true
 
-ignoredBuiltDependencies:
-  - '@biomejs/biome'
-  - '@swc/core'
+onlyBuiltDependencies:
   - esbuild
+  - lefthook
   - sharp
   - workerd
 
-onlyBuiltDependencies:
-  - '@tailwindcss/oxide'
-  - lefthook
+saveExact: true
+
+strictDepBuilds: true

@@ -1,20 +1,10 @@
-import {
-	GithubIcon,
-	InstagramIcon,
-	LinkedinIcon,
-	MailIcon,
-	MapPinHouseIcon,
-} from "lucide-react";
+import { GithubIcon, InstagramIcon, LinkedinIcon, MailIcon, MapPinHouseIcon } from "lucide-react";
 
 export default async function HomePage() {
 	return (
 		<div className="grid h-full place-items-center p-4 lg:p-8">
 			<div className="flex h-full w-full max-w-[1400px] flex-col gap-8 rounded-lg border bg-card p-8 text-card-foreground lg:h-auto lg:flex-row lg:items-center">
-				<img
-					alt="Profile"
-					src="/images/profile.webp"
-					className="size-[150px] rounded-lg"
-				/>
+				<img alt="Profile" src="/images/profile.webp" className="size-[150px] rounded-lg" />
 				<main className="flex flex-col gap-4">
 					<h1 className="text-3xl lg:text-4xl">Nihal Gonsalves</h1>
 					<section>
@@ -29,10 +19,7 @@ export default async function HomePage() {
 							href="mailto:me@nihalgonsalv.es"
 							className="flex shrink-0 items-center gap-2 rounded border px-2 py-1 hover:border-primary"
 						>
-							<MailIcon
-								className="relative top-[1px] size-5 shrink-0"
-								aria-label="Email"
-							/>
+							<MailIcon className="relative top-[1px] size-5 shrink-0" aria-label="Email" />
 							me@nihalgonsalv.es
 						</a>
 
@@ -48,10 +35,7 @@ export default async function HomePage() {
 							href="https://github.com/nihalgonsalves"
 							className="flex shrink-0 items-center gap-2 rounded border px-2 py-1 hover:border-primary"
 						>
-							<GithubIcon
-								className="relative top-[1px] size-5 shrink-0"
-								aria-label="GitHub"
-							/>
+							<GithubIcon className="relative top-[1px] size-5 shrink-0" aria-label="GitHub" />
 							nihalgonsalves
 						</a>
 
