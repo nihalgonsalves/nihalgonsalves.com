@@ -7,6 +7,11 @@
 		"pedantic": "error",
 		"perf": "error"
 	},
+	"options": {
+		"typeAware": true,
+		"typeCheck": true,
+		"reportUnusedDisableDirectives": "error"
+	},
 	"rules": {
 		"eslint/eqeqeq": ["error", "smart"],
 		"eslint/max-lines-per-function": "off",
