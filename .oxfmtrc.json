@@ -1,8 +1,8 @@
 {
 	"ignorePatterns": ["src/pages.gen.ts", "pnpm-lock.yaml", "pnpm-workspace.yaml"],
-	"experimentalSortImports": {
+	"sortImports": {
 		"groups": [
-			["side-effect"],
+			["side_effect"],
 			["builtin"],
 			["external", "type-external"],
 			["internal", "type-internal"],
@@ -11,7 +11,7 @@
 			["index", "type-index"]
 		]
 	},
-	"experimentalTailwindcss": {
+	"sortTailwindcss": {
 		"stylesheet": "./src/styles.css",
 		"attributes": ["class", "className"],
 		"functions": ["clsx", "cn"],
