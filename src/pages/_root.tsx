@@ -8,15 +8,7 @@ const getCsp = () => {
 	const config: [string, ("'self'" | "'unsafe-inline'" | `https://${string}` | "*")[]][] = [
 		["default-src", ["'self'"]],
 		["script-src", ["'self'", "'unsafe-inline'"]],
-		[
-			"style-src",
-			[
-				"'self'",
-				...(import.meta.env.DEV ? ["'unsafe-inline'" as const] : []),
-				"https://fonts.googleapis.com/css2",
-			],
-		],
-		["font-src", ["'self'", "https://fonts.gstatic.com"]],
+		["style-src", ["'self'", ...(import.meta.env.DEV ? ["'unsafe-inline'" as const] : [])]],
 	];
 
 	if (import.meta.env.DEV) {
@@ -40,8 +32,6 @@ export default async function RootElement({ children }: RootElementProps) {
 				<meta content="Nihal Gonsalves" name="author" />
 				<meta name="description" content="Software Engineer in Berlin, DE" />
 				<meta content="width=device-width, initial-scale=1" name="viewport" />
-				<link rel="preconnect" href="https://fonts.googleapis.com" />
-				<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
 			</head>
 			<body>{children}</body>
 		</html>

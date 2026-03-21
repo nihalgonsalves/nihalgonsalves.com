@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@fontsource-variable/inter':
+        specifier: 5.2.8
+        version: 5.2.8
       lucide-react:
         specifier: 0.577.0
         version: 0.577.0(react@19.2.4)
@@ -357,6 +360,9 @@ packages:
     engines: {node: '>=18'}
     cpu: [x64]
     os: [win32]
+
+  '@fontsource-variable/inter@5.2.8':
+    resolution: {integrity: sha512-kOfP2D+ykbcX/P3IFnokOhVRNoTozo5/JxhAIVYLpea/UBmCQ/YWPBfWIDuBImXX/15KH+eKh4xpEUyS2sQQGQ==}
 
   '@hono/node-server@1.19.10':
     resolution: {integrity: sha512-hZ7nOssGqRgyV3FVVQdfi+U4q02uB23bpnYpdvNXkYTRRyWx84b7yf1ans+dnJ/7h41sGL3CeQTfO+ZGxuO+Iw==}
@@ -1306,8 +1312,8 @@ packages:
     resolution: {integrity: sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==}
     engines: {node: '>=8'}
 
-  hono@4.12.5:
-    resolution: {integrity: sha512-3qq+FUBtlTHhtYxbxheZgY8NIFnkkC/MR8u5TTsr7YZ3wixryQ3cCwn3iZbg8p8B88iDBBAYSfZDS75t8MN7Vg==}
+  hono@4.12.8:
+    resolution: {integrity: sha512-VJCEvtrezO1IAR+kqEYnxUOoStaQPGrCmX3j4wDTNOcD1uRPFpGlwQUIW8niPuvHXaTUxeOUl5MMDGrl+tmO9A==}
     engines: {node: '>=16.9.0'}
 
   is-reference@3.0.3:
@@ -2040,9 +2046,11 @@ snapshots:
   '@esbuild/win32-x64@0.27.3':
     optional: true
 
-  '@hono/node-server@1.19.10(hono@4.12.5)':
+  '@fontsource-variable/inter@5.2.8': {}
+
+  '@hono/node-server@1.19.10(hono@4.12.8)':
     dependencies:
-      hono: 4.12.5
+      hono: 4.12.8
 
   '@img/colour@1.1.0': {}
 
@@ -2745,7 +2753,7 @@ snapshots:
 
   has-flag@4.0.0: {}
 
-  hono@4.12.5: {}
+  hono@4.12.8: {}
 
   is-reference@3.0.3:
     dependencies:
@@ -3164,11 +3172,11 @@ snapshots:
 
   waku@1.0.0-alpha.5(@types/node@25.3.3)(jiti@2.6.1)(lightningcss@1.32.0)(react-dom@19.2.4(react@19.2.4))(react-server-dom-webpack@19.2.4(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(webpack@5.98.0))(react@19.2.4)(terser@5.46.1):
     dependencies:
-      '@hono/node-server': 1.19.10(hono@4.12.5)
+      '@hono/node-server': 1.19.10(hono@4.12.8)
       '@vitejs/plugin-react': 5.1.4(vite@7.3.1(@types/node@25.3.3)(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.46.1))
       '@vitejs/plugin-rsc': 0.5.21(react-dom@19.2.4(react@19.2.4))(react-server-dom-webpack@19.2.4(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(webpack@5.98.0))(react@19.2.4)(vite@7.3.1(@types/node@25.3.3)(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.46.1))
       dotenv: 17.3.1
-      hono: 4.12.5
+      hono: 4.12.8
       magic-string: 0.30.21
       picocolors: 1.1.1
       react: 19.2.4
