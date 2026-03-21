@@ -7,7 +7,8 @@ type RootElementProps = { children: ReactNode };
 const getCsp = () => {
 	const config: [string, ("'self'" | "'unsafe-inline'" | `https://${string}` | "*")[]][] = [
 		["default-src", ["'self'"]],
-		["script-src", ["'self'", "'unsafe-inline'"]],
+		["connect-src", ["'self'", "https://static.cloudflareinsights.com/"]],
+		["script-src", ["'self'", "https://static.cloudflareinsights.com/", "'unsafe-inline'"]],
 		["style-src", ["'self'", ...(import.meta.env.DEV ? ["'unsafe-inline'" as const] : [])]],
 	];
 
