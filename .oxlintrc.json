@@ -18,16 +18,16 @@
 		"eslint/no-negated-condition": "off",
 		"eslint/no-warning-comments": "warn",
 		"eslint/require-await": "off",
-		"typescript-eslint/explicit-function-return-type": "off",
-		"typescript-eslint/require-await": "off",
-		"typescript-eslint/strict-boolean-expressions": [
+		"typescript/explicit-function-return-type": "off",
+		"typescript/require-await": "off",
+		"typescript/strict-boolean-expressions": [
 			"error",
 			{
 				"allowNullableString": true
 			}
 		],
 		"typescript/no-deprecated": "warn",
-		"typescript/require-await": "off",
+		"typescript/prefer-readonly-parameter-types": "off",
 		"unicorn/filename-case": [
 			"error",
 			{
