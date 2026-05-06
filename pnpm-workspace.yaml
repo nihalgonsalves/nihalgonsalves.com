@@ -1,11 +1,7 @@
-blockExoticSubdeps: true
-
-onlyBuiltDependencies:
-  - esbuild
-  - lefthook
-  - sharp
-  - workerd
+allowBuilds:
+  esbuild: true
+  lefthook: true
+  sharp: true
+  workerd: true
 
 saveExact: true
-
-strictDepBuilds: true
