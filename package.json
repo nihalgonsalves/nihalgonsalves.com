@@ -32,7 +32,7 @@
 		"oxlint-tsgolint": "0.22.1",
 		"tailwindcss": "4.2.4",
 		"typescript": "6.0.3",
-		"vite": "8.0.10",
+		"vite": "8.0.16",
 		"wrangler": "4.88.0"
 	},
 	"packageManager": "pnpm@11.0.6+sha512.97f906e1da2bedac3df83cadae04b4753a130092dd49d55cd36825ad3e623e9df3f97754f8f259e699172a360fac569acf2f908e7732bdae3eddb2dcf7e121fd"
