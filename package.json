@@ -12,28 +12,28 @@
 		"lint": "oxlint"
 	},
 	"dependencies": {
-		"@fontsource-variable/inter": "5.2.8",
-		"lucide-react": "0.577.0",
-		"react": "19.2.6",
-		"react-dom": "19.2.6",
-		"react-server-dom-webpack": "19.2.6",
-		"waku": "1.0.0-alpha.10"
+		"@fontsource-variable/inter": "5.3.0",
+		"lucide-react": "1.31.0",
+		"react": "19.2.8",
+		"react-dom": "19.2.8",
+		"react-server-dom-webpack": "19.2.8",
+		"waku": "1.0.0-beta.9"
 	},
 	"devDependencies": {
-		"@tailwindcss/vite": "4.2.4",
+		"@tailwindcss/vite": "4.3.3",
 		"@tsconfig/strictest": "2.0.8",
-		"@types/node": "25.6.0",
-		"@types/react": "19.2.14",
-		"@types/react-dom": "19.2.3",
-		"lefthook": "2.1.6",
-		"lightningcss": "1.32.0",
-		"oxfmt": "0.48.0",
-		"oxlint": "1.63.0",
-		"oxlint-tsgolint": "0.22.1",
-		"tailwindcss": "4.2.4",
-		"typescript": "6.0.3",
-		"vite": "8.0.10",
-		"wrangler": "4.88.0"
+		"@types/node": "26.2.0",
+		"@types/react": "19.2.18",
+		"@types/react-dom": "19.2.4",
+		"lefthook": "2.1.10",
+		"lightningcss": "1.33.0",
+		"oxfmt": "0.63.0",
+		"oxlint": "1.78.0",
+		"oxlint-tsgolint": "7.0.2001",
+		"tailwindcss": "4.3.3",
+		"typescript": "7.0.2",
+		"vite": "8.2.1",
+		"wrangler": "4.123.0"
 	},
 	"packageManager": "pnpm@11.0.6+sha512.97f906e1da2bedac3df83cadae04b4753a130092dd49d55cd36825ad3e623e9df3f97754f8f259e699172a360fac569acf2f908e7732bdae3eddb2dcf7e121fd"
 }
