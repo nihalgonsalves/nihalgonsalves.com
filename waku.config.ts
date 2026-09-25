@@ -9,9 +9,5 @@ export default defineConfig({
 				port: 3001,
 			},
 		},
-		build: {
-			minify: "esbuild",
-			cssMinify: "lightningcss",
-		},
 	},
 });
