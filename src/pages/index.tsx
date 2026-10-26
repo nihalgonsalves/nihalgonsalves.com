@@ -1,4 +1,6 @@
-import { GithubIcon, InstagramIcon, LinkedinIcon, MailIcon, MapPinHouseIcon } from "lucide-react";
+import { MailIcon, MapPinHouseIcon } from "lucide-react";
+
+import { GithubIcon, InstagramIcon, LinkedinIcon } from "../components/brand-icons";
 
 export default async function HomePage() {
 	return (

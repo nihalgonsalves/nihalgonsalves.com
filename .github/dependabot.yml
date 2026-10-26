@@ -9,10 +9,6 @@ updates:
       all:
         patterns:
           - "*"
-    ignore:
-      - dependency-name: "lucide-react"
-        update-types:
-          - "version-update:semver-major"
   - package-ecosystem: github-actions
     directory: "/"
     schedule:
