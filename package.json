@@ -8,6 +8,8 @@
 		"build": "waku build",
 		"start": "waku start",
 		"preview": "wrangler dev",
+		"deploy": "wrangler deploy",
+		"deploy:preview": "wrangler preview",
 		"format": "oxfmt",
 		"lint": "oxlint"
 	},
@@ -20,6 +22,7 @@
 		"waku": "1.0.0-rc.4"
 	},
 	"devDependencies": {
+		"@cloudflare/vite-plugin": "1.65.0",
 		"@tailwindcss/vite": "4.3.3",
 		"@tsconfig/strictest": "2.0.8",
 		"@types/node": "26.6.5",
