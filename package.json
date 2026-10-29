@@ -7,7 +7,9 @@
 		"dev": "waku dev",
 		"build": "waku build",
 		"start": "waku start",
-		"preview": "wrangler dev",
+		"preview": "wrangler dev -c wrangler.jsonc",
+		"deploy": "wrangler deploy -c wrangler.jsonc",
+		"deploy:preview": "wrangler preview -c wrangler.jsonc",
 		"format": "oxfmt",
 		"lint": "oxlint"
 	},
