@@ -1,6 +1,8 @@
 name: build
 on: [push]
 
+permissions: {}
+
 concurrency:
   group: ${{ github.workflow }}-${{ github.head_ref || github.ref_name }}
   cancel-in-progress: true
@@ -9,8 +11,12 @@ jobs:
   build:
     timeout-minutes: 5
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
       - uses: actions/checkout@v7.0.1
+        with:
+          persist-credentials: false
       # waiting on: https://github.com/actions/setup-node/issues/531
       - run: corepack enable
       - uses: actions/setup-node@v7.1.0
@@ -23,3 +29,14 @@ jobs:
       - run: node --run lint
       - run: node --run format -- --check
       - run: node --run build
+
+  zizmor:
+    timeout-minutes: 5
+    runs-on: ubuntu-latest
+    permissions:
+      security-events: write # upload SARIF to code scanning
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          persist-credentials: false
+      - uses: zizmorcore/zizmor-action@v0.8.0
